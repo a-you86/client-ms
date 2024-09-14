@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+   & .language {
+    width: 15vw;
+    display: inline-flex;
+    justify-content: space-around;
+     a {
+       text-decoration: none;
+     }
+
+  }
+}

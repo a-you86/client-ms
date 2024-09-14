@@ -1,0 +1,12 @@
+:root {
+  --red-color: #ff0000; /* Red color variable */
+  --body-font-family:  "Raleway", sans-serif;
+  --body-font-optical-sizing: 1.5rem;
+}
+
+
+@mixin font($font-family, $font-weight: normal, $font-style: normal) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}

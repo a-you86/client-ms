@@ -1,0 +1,11 @@
+<div class="home-wrapper">
+  <div class="journey">
+    <app-journey (journeyCoordinates)="handleJourneyCoordinates($event)"></app-journey>
+  </div>
+  <div class="map">
+    <app-map [startLocation]="startLocation" [endLocation]="endLocation" [carId]="carId"></app-map>
+  </div>
+</div>
+
+
+

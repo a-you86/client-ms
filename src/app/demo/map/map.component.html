@@ -1,0 +1,14 @@
+
+  <div class="row">
+    <div id="positionData">
+      <div class="outerBox" *ngFor="let vehicle of mapService.vehicles$ | async">
+        <div class="vehicleInfo">
+          <p><strong>{{ vehicle.carId }}</strong></p>
+          <p>Latitude: {{ vehicle.latitude }}</p>
+          <p>Longitude: {{ vehicle.longitude }}</p>
+        </div>
+      </div>
+    </div>
+    <div id="mapid"></div> <!-- The map container -->
+  </div>
+

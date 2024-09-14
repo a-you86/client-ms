@@ -1,0 +1,18 @@
+<form [formGroup]="journeyForm" (ngSubmit)="onSubmit()">
+  <sbb-select formControlName="carId" placeholder="Select Car">
+    @for (car of cars; track $index) {
+      <sbb-option [value]="car.id">{{ car.name }}</sbb-option>
+    }
+  </sbb-select>
+
+
+  <sbb-form-field>
+    <input sbbInput formControlName="startLocation"  placeholder="Enter Start Address">
+  </sbb-form-field>
+
+  <sbb-form-field>
+    <input sbbInput formControlName="endLocation" placeholder="Enter End Address">
+  </sbb-form-field>
+
+  <button sbb-button type="submit" [disabled]="!journeyForm.valid">Submit</button>
+</form>
